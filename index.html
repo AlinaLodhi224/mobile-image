@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Images Gallery</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        img {
+            width: 200px; 
+            margin: 15px;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.2s; 
+        }
+        img:hover {
+            transform: scale(1.05); 
+        }
+    </style>
+</head>
+<body>
+
+    <img src="pexels-barczakshoots-8381365.jpg" alt="Mobile 1" onclick="showAlert('Mobile 1 clicked!')" />
+    <img src="pexels-enesfilm-8183842.jpg" alt="Mobile 2" onclick="showAlert('Mobile 2 clicked!')" />
+    <img src="pexels-oandremoura-4621832.jpg" alt="Mobile 3" onclick="showAlert('Mobile 3 clicked!')" />
+    <img src="pexels-vahapdmr-17249214.jpg" alt="Mobile 4" onclick="showAlert('Mobile 4 clicked!')" />
+
+    <script>
+        // Function to show an alert message
+        function showAlert(message) {
+            alert(message);
+        }
+    </script>
+
+</body>
+</html>
